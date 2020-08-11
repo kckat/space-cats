@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>welcome to space boiiis</title>
+<!-- This loads Foundation CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet" type="text/css">
+<!-- This loads jQuery JavaScript (this must be before the Foundation js below) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- This loads Foundation JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<!--<script src="https://gist.github.com/L-A/3497902.js"></script>-->
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700|Roboto" rel="stylesheet">
+<!-- Finally, this starts foundation for everything on the page -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(document).foundation();
+	});
+</script>
+</head>
+<body>
+  <div class="grid-container head fluid">
+    <div class="grid-x grid-margin-x">
+				<div id="top" class="small-5 cell cat">
+					<a href="cats.html">
+						<img src="images/pizzacat.png" style="width:100%">
+					</a>
+				</div>
+				<div class="small-7 cell welcome">
+					<p class="title"> welcome to space nerds. </p>
+					<div class="subtitle"><span> here's what's going on </span></div>
+				</div>
+			</div>
+		</div>
+
+<div class="grid-container">
+	   <div class="grid-x grid-margin-x">
+      <div class="cell up">
+		  <p>what's up</p>
+		</div>
+		<div class="break cell"><hr></div>
+      <div class="cell medium-4 constellations">
+        <div class="slideshow-container">
+					<div  class="mySlides 0c 1c 2c 3c 4c 5c 6c 7c 8c 9c 10c 11c ursamajor fade">
+            <img id="imgborder" src="images/urmaj.png"  onclick="openUM()" class="hover-shadow"  style="width:100%">
+            <div class="text"><p>Ursa Major</p></div>
+          </div>
+
+          <div class="mySlides 2 3c fade">
+            <img id="imgborder" src="images/bootes.png"  onclick="openBo()" class="hover-shadow"  style="width:100%">
+            <div class="text">Bootes</div>
+          </div>
+
+          <div class="mySlides 2c  fade">
+            <img id="imgborder" src="images/orion.png" style="width:100%">
+            <div class="text">Orion the Hunter</div>
+          </div>
+
+          <div class="mySlides 2 4c 3c fade">
+            <img id="imgborder" src="images/leo.png"  onclick="openleo()" class="hover-shadow"  style="width:100%">
+            <div class="text">Leo the Lion</div>
+          </div>
+
+          <a class="prev" onclick="plusCSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusCSlides(1)">&#10095;</a>
+        </div>
+      </div>
+      <div class="cell medium-4 moonphases">
+				<p id="moonimg"></p>
+				<a href="mooncat.html">
+					<p id="moon" ></p>
+				</a>
+      </div>
+      <div class="cell medium-4 planets">
+				<div class="slideshow-container">
+					<div class="mySlides  3p 4p 5p 6p 7p fade">
+						<img id="imgborder" src="images/saturn.png" onclick="openSat()" class="hover-shadow"  style="width:100%">
+						<div class="text"onclick="openSat()" class="hover-shadow" >Saturn</div>
+					</div>
+
+					<div class="mySlides 2p 3p 4p 5p 6p fade">
+						<img id="imgborder" src="images/jupiter.png" onclick="openJup()" class="hover-shadow"  style="width:100%">
+						<div class="text">Jupiter</div>
+					</div>
+
+					<div class="mySlides 3p 4p 5p 6p 7p 8p fade">
+						<img id="imgborder" src="images/mars.png" onclick="openMar()" class="hover-shadow"  style="width:100%">
+						<div class="text">Mars</div>
+					</div>
+
+					<div class="mySlides 3p 4p 5p 6p 7p 8p fade">
+						<img id="imgborder" src="images/venus.png" onclick="openVen()" class="hover-shadow"  style="width:100%">
+						<div class="text">Venus</div>
+					</div>
+
+					<a class="prev" onclick="plusPSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusPSlides(1)">&#10095;</a>
+				</div>
+      </div>
+
+<div class="grid-container">
+ <div class="grid-x grid-margin-x">
+	 <div class="cell medium-6 meteor">
+		 		 	<img src="images/meteorshower.jpg" style="width:100%">
+		 <a href="http://earthsky.org/astronomy-essentials/earthskys-meteor-shower-guide" target="_blank">
+		 	<p class="centered">next meteor shower</p>
+		</a>
+	 </div>
+	 <div class="cell medium-6 eclipse">
+		 <img src="images/lunareclipse.jpeg">
+		 <a href="https://www.timeanddate.com/eclipse/list.html" target="_blank">
+		 		<p class="centered">next eclipse</p>
+	 	 </a>
+	 </div>
+ </div>
+</div>
+
+		<div class="cell up">
+		  <p>who's up</p>
+		</div>
+		<div class="break cell"><hr></div>
+					<div class="cell small-6 people">
+						<div class="cover">
+      			  <img class="opc" src="images/astronaut.jpg" style="width:100%">
+						  <a href="https://www.howmanypeopleareinspacerightnow.com/" target="_blank">
+						  	<p id="astronauts" class="centered">How many people are in space right now?</p>
+					  	</a>
+					 </div>
+					</div>
+					<div class="cell small-6 iss">
+						<img src="images/iss.png" style="width:100%">
+						<a href="https://spotthestation.nasa.gov/sightings/" target="_blank">
+					  	<p class="centered">next ISS pass</p>
+				  	</a>
+					</div>
+
+		<div class="cell up">
+					<p>resources</p>
+		</div>
+				<div class="break cell"><hr></div>
+					<div class="cell medium-4 res app">
+							<img src="images/starwalk.jpg" style="width:100%">
+							<div class="centered">
+								<a href="starmapapp.html">
+								  <p>Starmap App</p>
+								</a>
+							</div>
+					</div>
+					<div class="cell medium-4 res redlight">
+					 <img class="opc" src="images/redlight.jpg" style="width:100%">
+						<div class="centered">
+							<a href="redlight.html">
+								<p>Redlight Your Phone</p>
+							</a>
+						</div>
+					</div>
+					<div class="cell medium-4 res dark">
+  					<img class="opc" src="images/darksky.png" style="width:100%">
+					  	<div class="centered">
+						   <a href="clearsky.html">
+					  	  	<p>Dark Sky Locations</p>
+					 	   </a>
+						</div>
+				</div>
+			</div>
+			<div class="breakend cell">
+				<p> ;</p>
+			</div>
+
+    </div>
+  </div>
+<div class="footer cell">
+	<a href="#top">Go to top</a>
+</div>
+
+
+<div id="saturnMod" class="modal">
+	<span class="close cursor" onclick="closeSat()">&times;</span>
+		<div class="modal-content">
+			 <div class="saturnpop">
+				<p><b>Saturn</b></p>
+				<p> Rises: 22:31 </p>
+				<p> Sets: 10:33 </p>
+		    <p>
+	    </div>
+   </div>
+</div>
+
+<div id="jupiterMod" class="modal">
+	<span class="close cursor" onclick="closeJup()">&times;</span>
+		<div class="modal-content">
+			 <div class="jupiterpop">
+				<p><b>Jupiter</b></p>
+				<p> Rises: 19:09 </p>
+				<p> Sets: 07:11 </p>
+		    <p>
+	    </div>
+   </div>
+</div>
+
+<div id="marsMod" class="modal">
+	<span class="close cursor" onclick="closeMar()">&times;</span>
+		<div class="modal-content">
+			 <div class="marspop">
+				<p><b>Mars</b></p>
+				<p> Rises: 23:20 </p>
+				<p> Sets:11:21 </p>
+		    <p>
+	    </div>
+   </div>
+</div>
+
+<div id="venusMod" class="modal">
+	<span class="close cursor" onclick="closeVen()">&times;</span>
+		<div class="modal-content">
+			 <div class="venuspop">
+				<p><b>Venus</b></p>
+				<p> Rises: 07:37 </p>
+				<p> Sets:19:37 </p>
+		    <p>
+	    </div>
+   </div>
+</div>
+
+<div id="ursaMod" class="modal">
+	<span class="close cursor" onclick="closeUM()">&times;</span>
+		<div class="modal-content">
+			 <div class="ursapop">
+				<p><b>The Great Bear</b></p>
+	    </div>
+   </div>
+</div>
+
+<div id="bootMod" class="modal">
+	<span class="close cursor" onclick="closeBo()">&times;</span>
+		<div class="modal-content">
+			 <div class="bootpop">
+				<p><b>The Herdsman</b></p>
+	    </div>
+   </div>
+</div>
+
+<div id="leoMod" class="modal">
+	<span class="close cursor" onclick="closeleo()">&times;</span>
+		<div class="modal-content">
+			 <div class="leopop">
+				<p><b>The Lion</b></p>
+	    </div>
+   </div>
+</div>
+
+</div>
+
+
+<script src="moonphase.js"></script>
+<script src="constellations.js"></script>
+<script src="planets.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

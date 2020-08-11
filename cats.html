@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>moon</title>
+<!-- This loads Foundation CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet" type="text/css">
+<!-- This loads jQuery JavaScript (this must be before the Foundation js below) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- This loads Foundation JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<!--<script src="https://gist.github.com/L-A/3497902.js"></script>-->
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700|Roboto" rel="stylesheet">
+<!-- Finally, this starts foundation for everything on the page -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(document).foundation();
+	});
+</script>
+
+</head>
+<body>
+  <div class="grid-container head fluid">
+    <div class="grid-x grid-margin-x">
+				<div class="small-3 cell cat">
+					<a href="index.html">
+						<img src="images/pizzacat.png" style="width:100%">
+					</a>
+				</div>
+				<div class="small-6 cell"></div>
+				<div class="small-3 cell welcome">
+					<div class="topnav" id="myTopnav">
+					<!--<a href="#home" class="active">Home</a>-->
+					<a href="#news">News</a>
+					<a href="#contact">Contact</a>
+					<a href="#about">About</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+				</div>
+				</div>
+			</div>
+		</div>
+
+<div class="grid-container head fluid">
+	<div class="grid-y grid-margin-y">
+		<div class="omgcats cell">
+			<img src="images/omgcat.gif">
+    </div>
+		<div class="omgcats cell">
+			<img src="images/omgcat.gif">
+    </div>
+		<div class="omgcats cell">
+			<img src="images/omgcat.gif">
+    </div>
+		<div class="omgcats cell">
+			<img src="images/omgcat.gif">
+    </div>
+		<div class="omgcats cell">
+			<img src="images/omgcat.gif">
+    </div>
+	</div>
+	<div class="footer cell">
+		<a href="#top">Go to top</a>
+	</div>
+</div>
+
+
+
+<script src="scripts/shapes.js"></script>
+<script src="moonphase.js"></script>
+<script src="constellations.js"></script>
+<script src="planets.js"></script>
+
+
+
+</body>
+</html>

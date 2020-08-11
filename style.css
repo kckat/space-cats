@@ -1,0 +1,592 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  background-color: #181818 !important;
+}
+
+a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+a:link, a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #ADD8E6;
+}
+
+.redintro {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+.title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-kerning: 2px;
+  font-size: 6vw;
+  position: absolute;
+  right: 0px;
+  top: 45px;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.subtitle span{
+  font-kerning: 2px;
+  font-size: 2vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+.planet-title{
+  color: white;
+  text-align: center;
+  padding-left: 40px;
+  margin-bottom: -20px;
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 100px;
+}
+
+
+.mySlides {
+  display: none;
+  border-radius: 20%;
+}
+
+.text {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px ;
+}
+
+img {
+  vertical-align: middle;
+	border-radius: 20%;
+}
+
+.up {
+  color: white;
+  text-align: left;
+  padding-left: 40px;
+	margin-bottom: -20px;
+  margin-top: 40px;
+  font-size: 20px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 100px;
+}
+
+hr {
+	color: white;
+	size: 5px;
+}
+.break{
+	padding-top: -10;
+	margin-top: -20;
+}
+
+.head {
+  background-image: url(images/milkyway.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  visibility: visible;
+}
+
+.cat {
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255,0,0,0.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.saturnpop {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-image: url(images/saturnsky.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  padding-top: 20px;
+  padding-bottom:500px;
+}
+
+.jupiterpop {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-image: url(images/jupitersky.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  padding-top: 20px;
+  padding-bottom:500px;
+}
+
+.marspop {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-image: url(images/marssky.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  padding-top: 20px;
+  padding-bottom:500px;
+}
+
+.venuspop {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-image: url(images/venussky.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  padding-top: 20px;
+  padding-bottom:500px;
+}
+
+.bootpop {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  background-image: url(images/catpants.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom:500px;
+}
+
+.ursapop {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-image: url(images/umcat.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom:500px;
+}
+
+.leopop {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-image: url(images/leocat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom:500px;
+}
+
+.mySlides:hover {
+  cursor: pointer;
+}
+
+#imgborder {
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 20%;
+}
+
+/*
+.constellations {
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 20%;
+}
+
+.planets {
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 20%;
+}*/
+
+.welcome {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+	color: white;
+  position: relative;
+}
+.moonphases{
+  padding: 10px;
+  text-align: center;
+  min-height:100px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20%;
+  border-width: 2px;
+  margin-bottom:25px;
+}
+.background {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#moonimg {
+  margin-top: 0;
+  padding: 25px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#moon {
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.meteor{
+  color: white;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.eclipse{
+  color: white;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+
+}
+
+.people, .iss {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.opc {
+  opacity: 0.5;
+}
+
+.hold {
+  float:left;
+  position: relative;
+  width: 30%;
+  padding-bottom: 30%;
+  margin:1.66%;
+  overflow:hidden;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: blue;
+  font-weight: lighter;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: red;
+  /*background-color: rgba(0,0,0,0.8);*/
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0);
+}
+
+.title-bar {
+  color:white;
+  background-image: url(images/starwalk.jpg);
+}
+
+.dark, .redlight, .app {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* redlight page */
+.redinfo {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.imageFloatL {
+  float: left;
+  padding: 25px;
+  padding-top: 5px;
+  margin: 10px;
+}
+
+.imageFloatR {
+  float: right;
+  padding: 25px;
+  padding-top: 5px;
+  margin: 10px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  border-radius: 20%;
+}
+
+.breakend{
+  padding: 30px;
+}
+
+.red {
+  min-height: 500px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+#myCanvas {
+ position:absolute;
+ overflow:hidden;
+ background-color:white;
+ }
+
+ .error {
+   background-image: url(images/sadcat.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 700px;
+ }
+
+ .oops {
+   color: white;
+   text-align: center;
+   font-size: 70px;
+   padding-top: 180px;
+ }
+
+ .omgcats {
+   padding: 100px;
+   color: white;
+   background-image: url(images/omgcat.gif);
+ }
+
+ .mooncats {
+   color:white;
+   text-align: center;
+   margin: 30px;
+ }
+
+ .cloudmap {
+   margin: 30px;
+ }
+
+.footer {
+  background-image: url(images/bottomcat.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+.topnav {
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.active {
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media screen and (max-width: 800px) {
+
+  .title {
+    font-size: 8vw;
+  }
+
+  .moonphases{
+    margin: 28px;
+  }
+
+  .topnav {
+    visibility: visible;
+  }
+
+  .topnav a:not(:active) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  .dark, .redlight, .app {
+    margin: 20px;
+  }
+  #astronauts {
+    font-size: 15px;
+  }
+  .footer {
+    background-image: url(images/footercat.jpg);
+  }
+
+}

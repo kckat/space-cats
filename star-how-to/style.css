@@ -1,0 +1,25 @@
+body {
+  background-color: brown;
+  background-size: cover;
+  align-content: center;
+}
+
+h3, h1 {
+  color: white;
+}
+
+.container {
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.button {
+  padding: 5px;
+  font-family: helvetica;
+  font-variant-caps: all-small-caps;
+
+}
+
+.push {
+  background-color: green;
+}
